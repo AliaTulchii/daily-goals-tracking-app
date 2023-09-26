@@ -22,7 +22,7 @@ const Homepage = () => {
                 item: item,
                 color: randomColor({
                     luminosity: 'bright',
-                    hue: 'pink',
+                    hue: 'blue',
                 }),
                 
                 // defaultPost: {
@@ -41,7 +41,20 @@ const Homepage = () => {
   
   const deleteItem = (id) => {
     setItems(items.filter(item => item.id !== id))
+  }
+  
+  const updatePosition = (data, idx) => {
+    let newArray = [...items]
+    newArray[idx].defaultPosition = { x: data.x, y: data.y }
+    setItems(newArray)
+  }
+
+  const keyPress = (e) => {
+    const code = e.keyCode || e.which
+    if (code === 13) {
+      newItem()
     }
+  }
 
 
   return (
@@ -63,13 +76,20 @@ const Homepage = () => {
             className="todo__input"
             placeholder="Write your goal for today"
             onChange={(e) => setItem(e.target.value)}
+            onKeyDownCapture={(e) => keyPress(e)}
           />
           <button className="todo__btn" onClick={newItem}>Add goal</button>
         </div>
         <div className='item-box'>
         {items.map((i, idx) => {
                   return (
-                      <Draggable key={idx} defaultPosition={i.defaultPosition}>
+                    <Draggable
+                      key={idx}
+                      defaultPosition={i.defaultPosition}
+                      onStop={(_, data) => {
+                        updatePosition(data, idx)
+                      }}
+                    >
                           <div className='todo__item' style={{background: i.color}}>
                               {`${i.item}`}
                               <button className='todo__close-item' onClick={()=> deleteItem(i.id)}>X</button>

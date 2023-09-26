@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/daily-goals-tracking-app/static/css/main.6a9ff86c.css",
+    "main.css": "/daily-goals-tracking-app/static/css/main.d460e3a9.css",
     "main.js": "/daily-goals-tracking-app/static/js/main.05672622.js",
     "index.html": "/daily-goals-tracking-app/index.html",
-    "main.6a9ff86c.css.map": "/daily-goals-tracking-app/static/css/main.6a9ff86c.css.map",
+    "main.d460e3a9.css.map": "/daily-goals-tracking-app/static/css/main.d460e3a9.css.map",
     "main.05672622.js.map": "/daily-goals-tracking-app/static/js/main.05672622.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a9ff86c.css",
+    "static/css/main.d460e3a9.css",
     "static/js/main.05672622.js"
   ]
 }

@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/daily-goals-tracking-app/static/css/main.073c9b0a.css",
-    "main.js": "/daily-goals-tracking-app/static/js/main.ed34d1e0.js",
-    "static/js/787.8ef42173.chunk.js": "/daily-goals-tracking-app/static/js/787.8ef42173.chunk.js",
-    "static/media/logo.svg": "/daily-goals-tracking-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/daily-goals-tracking-app/static/css/main.9eadff8f.css",
+    "main.js": "/daily-goals-tracking-app/static/js/main.05672622.js",
     "index.html": "/daily-goals-tracking-app/index.html",
-    "main.073c9b0a.css.map": "/daily-goals-tracking-app/static/css/main.073c9b0a.css.map",
-    "main.ed34d1e0.js.map": "/daily-goals-tracking-app/static/js/main.ed34d1e0.js.map",
-    "787.8ef42173.chunk.js.map": "/daily-goals-tracking-app/static/js/787.8ef42173.chunk.js.map"
+    "main.9eadff8f.css.map": "/daily-goals-tracking-app/static/css/main.9eadff8f.css.map",
+    "main.05672622.js.map": "/daily-goals-tracking-app/static/js/main.05672622.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.ed34d1e0.js"
+    "static/css/main.9eadff8f.css",
+    "static/js/main.05672622.js"
   ]
 }
